@@ -77,6 +77,9 @@ div:empty {
     font-family: "katex-regular", Symbola-mq, "Times New Roman", serif;
     border-radius: 5px;
     border: 2px solid #d9d9d9;
+    text-align: center;
+    line-height: 160px;
+
     /*HyhwpEQ, 문체부 돋음체, Symbola-mq,"Times New Roman",serif*/
     /*var태그로 변수 기울임 가능, span과 같이 사용하면 기울였을때 안겹칠 수 잇음*/
     /*폰트 사이트 "눈누"*/
