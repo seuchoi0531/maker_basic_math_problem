@@ -1,0 +1,44 @@
+section {
+    padding: 0 10px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+	align-items: stretch;
+}
+section>div {
+    box-sizing: border-box;
+    border-bottom: 2px solid #d9d9d9;
+    padding: 5px;
+}
+#time {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+	align-items: stretch;
+}
+#problem{
+    flex-grow: 1;
+}
+#button_area {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+	align-items: stretch;
+}
+#ctime {
+    width: 100px;
+    border: 2px solid #d9d9d9;
+}
+#ttime {
+    width: 100px;
+    border: 2px solid #d9d9d9;
+}
+#pre {
+    width: 100px;
+    border: 2px solid #d9d9d9;
+}
+#next {
+    width: 100px;
+    border: 2px solid #d9d9d9;
+}

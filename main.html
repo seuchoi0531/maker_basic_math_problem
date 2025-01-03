@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="mainsheet.css">
+    <link rel="stylesheet" href="navsheet.css">
+    <link rel="stylesheet" href="asidesheet.css">
+    <link rel="stylesheet" href="sectionsheet.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="mainjs.js"></script>
     <title>곱셈공식 문제 생성기</title>
@@ -11,20 +14,63 @@
 
 <body>
     <div id="wrap">
-        <div id="title"></div>
+        <div id="top">
+            <div id="icon"></div>
+            <div id="title"></div>
+        </div>
         <div id="main">
-            <div id="body">
-                <div id="equation">[1+{(2-3)*4}/5]=2<var>x</var>-5</div>
-                <div id="solve"></div>
-                <div id="button_bar"></div>
+            <nav></nav>
+            <div id="under_nav">
+                <aside>
+                    <div id="emh">
+                        <form>
+                            <input type="radio" id="school-type-middle" name="school-type" value="middle">
+                            <label for="school-type-middle">중학교</label>
+                            <input type="radio" id="school-type-high" name="school-type" value="high" checked>
+                            <label for="school-type-high">고등학교</label>
+                        </form>
+                    </div>
+                    <div id="subject">
+                        <form>
+                            <select name="subject">
+                                <option value="0">수상</option>
+                                <option value="1">수하</option>
+                                <option value="2">수I</option>
+                                <option value="3">수II</option>
+                                <option value="4" selected>미적분</option>
+                                <option value="5">확통</option>
+                                <option value="6">기하</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="num_of_problem">
+                        <input type="range" min="1" max="50" value="10" id="num_of_problem1">
+                        <span id="num_of_problem2">10</span>
+                    </div>
+                    <div id="unit">
+                        <ol>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </div>
+                    <div id="start">
+                        <button id="execute">Go!</button>
+                    </div>
+                </aside>
+                <section>
+                    <div id="time">
+                        <div id="ctime"></div>
+                        <div id="ttime"></div>
+                    </div>
+                    <div id="problem"></div>
+                    <div id="button_area">
+                        <div id="pre"></div>
+                        <div id="next"></div>
+                    </div>
+                </section>
             </div>
-            <div id="section">
-                <div id="hint_ans"></div>
-            </div>
-            <div id="nav">
-                <div id="option"></div>
-            </div>
-
         </div>
     </div>
 </body>
