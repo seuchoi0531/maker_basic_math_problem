@@ -23,16 +23,16 @@
             <div id="under_nav">
                 <aside>
                     <div id="emh">
-                        <form>
+                        <form id="school_type">
                             <input type="radio" id="school-type-middle" name="school-type" value="middle">
                             <label for="school-type-middle">중학교</label>
                             <input type="radio" id="school-type-high" name="school-type" value="high" checked>
                             <label for="school-type-high">고등학교</label>
                         </form>
                     </div>
-                    <div id="subject">
+                    <div id="subject_div">
                         <form>
-                            <select name="subject">
+                            <select id="subject" name="subject">
                                 <option value="0">수상</option>
                                 <option value="1">수하</option>
                                 <option value="2">수I</option>
@@ -47,13 +47,7 @@
                         <input type="range" min="1" max="50" value="10" id="num_of_problem1">
                         <span id="num_of_problem2">10</span>
                     </div>
-                    <div id="unit">
-                        <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ol>
+                    <div id="unit_div">
                     </div>
                     <div id="start">
                         <button id="execute">Go!</button>
